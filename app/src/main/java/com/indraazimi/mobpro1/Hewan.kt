@@ -11,5 +11,6 @@ package com.indraazimi.mobpro1
 
 data class Hewan(
         val nama: String,
-        val namaLatin: String
+        val namaLatin: String,
+        val imageResId: Int
 )
