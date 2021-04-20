@@ -17,9 +17,15 @@ import com.indraazimi.mobpro1.R
 import com.indraazimi.mobpro1.databinding.ListItemBinding
 import com.indraazimi.mobpro1.model.Hewan
 
-class MainAdapter(
-    private val data: List<Hewan>
-) : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
+class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
+
+    private val data = mutableListOf<Hewan>()
+
+    fun updateData(newData: List<Hewan>) {
+        data.clear()
+        data.addAll(newData)
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
