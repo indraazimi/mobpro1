@@ -7,7 +7,7 @@
  * terhadap project ini tanpa izin pemilik hak cipta.
  */
 
-package com.indraazimi.mobpro1
+package com.indraazimi.mobpro1.model
 
 data class Hewan(
         val nama: String,

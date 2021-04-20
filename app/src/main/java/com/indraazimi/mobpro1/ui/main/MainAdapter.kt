@@ -7,13 +7,15 @@
  * terhadap project ini tanpa izin pemilik hak cipta.
  */
 
-package com.indraazimi.mobpro1
+package com.indraazimi.mobpro1.ui.main
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.indraazimi.mobpro1.R
 import com.indraazimi.mobpro1.databinding.ListItemBinding
+import com.indraazimi.mobpro1.model.Hewan
 
 class MainAdapter(
     private val data: List<Hewan>
