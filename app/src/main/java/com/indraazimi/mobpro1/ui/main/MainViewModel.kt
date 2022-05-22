@@ -9,11 +9,16 @@
 
 package com.indraazimi.mobpro1.ui.main
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.indraazimi.mobpro1.R
 import com.indraazimi.mobpro1.model.Hewan
+import com.indraazimi.mobpro1.network.HewanApi
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class MainViewModel : ViewModel() {
 
@@ -21,6 +26,18 @@ class MainViewModel : ViewModel() {
 
     init {
         data.value = initData()
+        retrieveData()
+    }
+
+    private fun retrieveData() {
+        viewModelScope.launch(Dispatchers.IO) {
+            try {
+                val result = HewanApi.service.getHewan()
+                Log.d("MainViewModel", "Success: $result")
+            } catch (e: Exception) {
+                Log.d("MainViewModel", "Failure: ${e.message}")
+            }
+        }
     }
 
     // Data ini akan kita ambil dari server di langkah selanjutnya
