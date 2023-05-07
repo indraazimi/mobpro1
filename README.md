@@ -1,8 +1,10 @@
 # Galeri Hewan
 
-Aplikasi Android sederhana yang menampilkan list hewan menggunakan RecyclerView.
+Aplikasi Android sederhana yang menampilkan list hewan menggunakan RecyclerView. Data hewan berasal dari static API.
 
-<img src="screenshot/main.png" width="250">
+Tampilan Loading                               | Tampilan Utama                             | Tampilan Error
+-----------------------------------------------|--------------------------------------------|---------------------------------------------
+<img src="screenshots/loading.png" width="200">|<img src="screenshots/main.png" width="200">|<img src="screenshots/error.png" width="200">
 
 Punya pertanyaan atau masukan? Silahkan disampaikan melalui issue repository ini.
 
