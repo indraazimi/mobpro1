@@ -1,6 +1,6 @@
 # Galeri Hewan
 
-Aplikasi Android sederhana yang menampilkan list hewan menggunakan RecyclerView.
+Aplikasi Android sederhana yang menampilkan list hewan menggunakan RecyclerView. Terdapat dua pilihan tampilan, yaitu list atau grid. Pengguna dapat berpindah dari satu tampilan ke tampilan lainnya dengan klik action menu di kanan atas. Pilihan tampilan ini selanjutnya disimpan menggunakan Preferences DataStore agar ketika pengguna masuk ke aplikasi lagi, tampilan tetap sesuai pilihan terakhirnya.
 
 <img src="screenshot/main.png" width="250">
 
