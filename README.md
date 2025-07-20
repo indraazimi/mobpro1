@@ -1,5 +1,9 @@
 # Mobile Programming 1
 
+**Repository diarsipkan** karena materi Mobpro 1 mulai Februari 2024 sudah menggunakan Jetpack Compose untuk layout, dan menggunakan studi kasus yang berbeda. Untuk melihat project terbaru, silahkan kunjungi repo [indraazimi/mobpro1-compose](https://github.com/indraazimi/mobpro1-compose) 😊
+
+..
+
 Ini adalah repository bahan praktikum mata kuliah Mobile Programming 1 (Android).
 
 Setiap minggu praktikum akan digunakan 1 modul. Terdapat 8 branch untuk 7 modul.
